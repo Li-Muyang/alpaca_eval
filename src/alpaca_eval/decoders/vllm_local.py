@@ -23,7 +23,7 @@ def vllm_local_completions(
     model_name: str,
     max_new_tokens: int,
     is_chatml_prompt: bool = False,
-    batch_size: int | None = None,  # default of vllm is 256
+    batch_size: int,  # default of vllm is 256
     model_kwargs=None,
     **decoding_kwargs,
 ) -> dict[str, list]:
